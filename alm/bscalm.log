@@ -1,0 +1,29 @@
+yarn run v1.22.19
+$ PORT=4004 serve -s build -n 2
+ERROR: Please provide one path argument at maximum
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+nohup: appending output to ‘nohup.out’
+INFO: Accepting connections at http://localhost:4004.
+INFO: Gracefully shutting down. Please wait...
+nohup: appending output to ‘nohup.out’
+INFO: Accepting connections at http://localhost:4004.
+nohup: appending output to ‘nohup.out’
+INFO: Accepting connections at http://localhost:4004.
+nohup: appending output to ‘nohup.out’
+nohup: appending output to ‘nohup.out’
+Error: Returned error: limit exceeded
+    at Object.ErrorResponse (/root/tokenbridge/alm/node_modules/web3-core-helpers/src/errors.js:30:19)
+    at onJsonrpcResult (/root/tokenbridge/alm/node_modules/web3-core-requestmanager/src/index.js:172:36)
+    at XMLHttpRequest.request.onreadystatechange (/root/tokenbridge/alm/node_modules/web3-providers-http/src/index.js:111:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/root/tokenbridge/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (/root/tokenbridge/node_modules/xhr2-cookies/dist/xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (/root/tokenbridge/node_modules/xhr2-cookies/dist/xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (/root/tokenbridge/node_modules/xhr2-cookies/dist/xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:326:22)
+    at endReadableNT (_stream_readable.js:1241:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  data: null
+}
+./load-env.sh: line 16:  8452 Terminated              $*
+error Command failed with exit code 143.

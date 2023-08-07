@@ -1,0 +1,30 @@
+{
+  "snapshotBlockNumber": 1954793,
+  "chainId": 56,
+  "RequiredBlockConfirmationChanged": [
+    {
+      "blockNumber": 1894080,
+      "returnValues": {
+        "requiredBlockConfirmations": "1"
+      }
+    }
+  ],
+  "RequiredSignaturesChanged": [
+    {
+      "blockNumber": 1894056,
+      "returnValues": {
+        "requiredSignatures": "1"
+      }
+    }
+  ],
+  "ValidatorAdded": [
+    {
+      "blockNumber": 1894056,
+      "returnValues": {
+        "validator": "0xf2682BF6a87BDb1984cF588FfE13D878876918d5"
+      },
+      "event": "ValidatorAdded"
+    }
+  ],
+  "ValidatorRemoved": []
+}
