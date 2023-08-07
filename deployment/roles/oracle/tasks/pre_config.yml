@@ -1,0 +1,19 @@
+---
+- name: Create oracle directory
+  file:
+    path: "{{ bridge_path }}/oracle"
+    state: directory
+    mode: '0755'
+
+- name: Install .env config
+  template:
+    src: .env.j2
+    dest: "{{ bridge_path }}/oracle/.env"
+    owner: "{{ compose_service_user }}"
+    mode: '0640'
+
+- name: Copy docker-compose file
+  copy:
+    src: ../../../../oracle/docker-compose-amb.yml
+    dest: "{{ bridge_path }}/oracle/docker-compose.yml"
+    mode: '0755'
